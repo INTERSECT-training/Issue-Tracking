@@ -4,14 +4,14 @@ teaching: 5
 exercises: 5
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::::::::::::::::::::::::::::::::::::::: questions
 
 - "What is issue tracking?"
 - "Why is issue tracking useful?"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+:::::::::::::::::::::::::::::::::::::::: objectives
 
 - "Understand the purpose and benefits of issue trackers"
 - "Become familiar with GitHub Issues"
