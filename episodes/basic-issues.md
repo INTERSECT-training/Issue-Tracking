@@ -5,28 +5,28 @@ exercises: 10
 ---
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- "Become familiar with basic actions on GitHub Issues"
+- Become familiar with basic actions on GitHub Issues
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- "How do you make an issue?"
-- "How do you interact with an open issue?"
-- "How do you close an issue?"
+- How do you make an issue?
+- How do you interact with an open issue?
+- How do you close an issue?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Open an Issue
 
 To open a new issue, navigate to the issue page. Here you will see a green
-"New issue" button. Click this to start the creation of a new issue.
+"New issue" button in the top-right. Click this to start the creation of a new issue.
 
-![](fig/new-issue.png){alt='New issue button circled in red'}
+![](fig/new-issue.png){alt='New issue button circled in red. Button is on the top-right on the Issues page.'}
 
 This will load a new page with an empty issue.
 
-![](fig/empty-issue.png){alt='Empty issue page after clicking new issue button'}
+![](fig/empty-issue.png){alt='Empty issue page after clicking new issue button. All details (Title, Write, Assignees, etc.) are empty.'}
 
 A new issue has several parts:
 
@@ -36,7 +36,7 @@ A new issue has several parts:
 
 Once an issue is filled out, the "Submit new issue" button will highlight.
 
-![](fig/submit-new-issue.png){alt='Submit new issue button highlighted and available to press'}
+![](fig/submit-new-issue.png){alt='Submit new issue button is now highlighted and available to press'}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -73,7 +73,7 @@ appropriate permissions!
 
 There are many interactions available on an open issue.
 
-![](fig/solution-open-issue-exercise.png){alt='A basic open issue based on the exercise above'}
+![](fig/solution-open-issue-exercise.png){alt='A basic open issue based on the exercise above - Title "Miranda's First Issue", status "Open", basic content in the "Write" section'}
 
 The most basic interaction with an open issue is leaving a comment. This is
 how you can interact with the issue author, the assignee, and others who
@@ -82,7 +82,7 @@ have commented on or subscribed to the issue.
 Simply click in the comment box at the bottom of the issue, type whatever
 you'd like, and click "Comment."
 
-![](fig/add-issue-comment.png){alt='Add a comment box on a new issue'}
+![](fig/add-issue-comment.png){alt='Image showing how to add a comment box on a new issue'}
 
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -123,7 +123,7 @@ comment" button.
 
 The dropdown to the right shows two more options:
 
-![](fig/close-issue-options.png){alt='Close issue button additional options'}
+![](fig/close-issue-options.png){alt='Extra Close issue button options displayed - "Close as completed" and "Close as not completed"'}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -141,9 +141,9 @@ You now know the basic actions you can take on a GitHub issue!
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- "New issues can be opened in a repository using the 'New issue' button."
-- "Text on issues use Markdown styling for formatting."
-- "A user can interact with issues in multiple ways: commenting, mentioning others, linking to other issues and pull requests, and more."
+- New issues can be opened in a repository using the 'New issue' button.
+- Text on issues use Markdown styling for formatting.
+- A user can interact with issues in multiple ways: commenting, mentioning others, linking to other issues and pull requests, and more.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
