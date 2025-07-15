@@ -6,15 +6,15 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::: questions
 
-- "What is issue tracking?"
-- "Why is issue tracking useful?"
+- What is issue tracking?
+- Why is issue tracking useful?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: objectives
 
-- "Understand the purpose and benefits of issue trackers"
-- "Become familiar with GitHub Issues"
+- Understand the purpose and benefits of issue trackers
+- Become familiar with GitHub Issues
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -28,7 +28,7 @@ done.
 Issues are used to collaborate, solve problems, and plan work, which is 
 enabled by software tools such as GitLab issues, Jira story boards, and GitHub issues.
 
-![](fig/issue_tracking_intro.png){alt='Collaborative tracking in the public eye'}
+![](fig/issue_tracking_intro.png){alt='Collaborative tracking in the public eye. Decorative image of no substance.'}
 
 Issue trackers can be internal (team-facing) or external (user-facing). In
 this lesson, students will learn about issue tracking through the use of GitHub
@@ -51,23 +51,23 @@ integrated and stand-alone.
 GitHub integrates issue tracking into their version control system. Every project
 on GitHub can enable an integrated issue tracker.
 
-![](fig/intersect-nav.png){alt='INTERSECT training repository navigation bar'}
+![](fig/intersect-nav.png){alt='INTERSECT training repository navigation bar, showing, from left to right: Code, Issues, Pull Requests, Actions, Projects, Security, Insights'}
 
-To access a repository's issues, simply navigate to the repository root
+To access a repository's issues, navigate to the repository root
 page and click on "Issues" in the navigation bar. This will take you to the
 page of all "Open" issues.
 
-![](fig/intersect-issues.png){alt='INTERSECT training repository issues pages'}
+![](fig/intersect-issues.png){alt='INTERSECT training repository Issues pages'}
 
 Click on an issue to open it and read its details, plus any discussion
 on that issue.
 
-![](fig/intersect-issue-13.png){alt='INTERSECT training repository issue 13 details'}
+![](fig/intersect-issue-13.png){alt='INTERSECT training repository issue 13, titled "add merely useful + turing way to list resources?"'}
 
 You can also change the default filter on the Issues page by status ("Open" or
 "Closed"), author, and more.
 
-![](fig/intersect-filter.png){alt='Issue top-bar filter options'}
+![](fig/intersect-filter.png){alt='Issue top-bar filter options which include Open, Closed, Author, Label, Projects, Milestones, Assignee, and Sort'}
 
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -85,8 +85,8 @@ Navigate to [https://github.com/spack/spack](https://github.com/spack/spack) and
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- "Issue tracking is the process of monitoring problems and requests for a software product."
-- "Issue tracking enables a software development team to capture, organize, and manage work collaboratively."
+- Issue tracking is the process of monitoring problems and requests for a software product.
+- Issue tracking enables a software development team to capture, organize, and manage work collaboratively.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
