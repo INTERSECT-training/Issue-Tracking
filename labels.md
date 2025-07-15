@@ -5,13 +5,13 @@ teaching: 5
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- "Learn how to use labels for GitHub issues."
+- Learn how to use labels for GitHub issues.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- "How do you make and assign labels to issues?"
+- How do you make and assign labels to issues?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -36,11 +36,11 @@ From [GitHub's official documentation](https://docs.github.com/en/issues/using-l
 
 These labels can be viewed from the Issues and Pull Requests pages.
 
-![](fig/issues-labels.png){alt='The issue page with the labels option highlighted'}
+![](fig/issues-labels.png){alt='The issue page with the labels option ("Labels - 9") highlighted'}
 
-![](fig/default-labels.png){alt='The default set of labels'}
+![](fig/default-labels.png){alt='The default set of labels, listed in the table above'}
 
-As you can see, several of these are aimed towards large, open-source communities
+Several of these labels are aimed towards large, open-source communities
 with many collaborators. This is not always the case in Research Software
 Engineering, however, so we will need to modify these.
 
@@ -48,7 +48,7 @@ Engineering, however, so we will need to modify these.
 
 Labels can be added, edited, or deleted from the labels page.
 
-![](fig/label-highlights.png){alt='Label actions highlighted'}
+![](fig/label-highlights.png){alt='On the Labels page, individual label actions (Edit, Delete) circled'}
 
 Each label has three attributes:
 
@@ -56,7 +56,7 @@ Each label has three attributes:
 * Description
 * Color (Hex code)
 
-![](fig/label-attributes.png){alt='Label attributes - name, description, color'}
+![](fig/label-attributes.png){alt='Label attributes - label name, description, color - and the buttons "Cancel" and "Save changes"'}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -80,17 +80,17 @@ From the main Issues page, simply checkmark the issue, hit the "Label"
 dropdown, select your preferred label(s), and click outside of the
 dropdown.
 
-![](fig/apply-labels-issue-page.png){alt='Apply Labels from the main Issues page'}
+![](fig/apply-labels-issue-page.png){alt='Display of the "Apply Labels" dropdown from the main Issues page - shows all of the label colors and names'}
 
 To apply within a single issue, click on the issue to open it. Then you
 will see the "Labels" option on the right-hand side.
 
-![](fig/label-option-in-issue.png){alt='Highlighted Labels option within a single issue'}
+![](fig/label-option-in-issue.png){alt='Highlighted Labels section on the right-hand side within a single issue (has been labeled "enhancement")'}
 
 Click on "Labels". A dropdown will appear in which you can select or deselect
 your preferred label(s).
 
-![](fig/label-dropdown-in-issue.png){alt='Label dropdown within a single issue'}
+![](fig/label-dropdown-in-issue.png){alt='Cog-wheel option selected to reveal the label dropdown within a single issue'}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -113,7 +113,7 @@ To filter, navigate to the main Issues page. With no issue selected, click the
 "Labels" dropdown again. You'll see that this dropdown now says "Filter by
 label" rather than "Apply labels."
 
-![](fig/filter-by-label.png){alt='Filter by label dropdown on main Issue page'}
+![](fig/filter-by-label.png){alt='Filter by label dropdown on main Issue page - allows you to filter by a single label'}
 
 Click on a label in the list to filter by it. GitHub will only show issues
 that have that label applied.
@@ -139,7 +139,7 @@ GitHub Issues.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- "Labelling issues can help with organization and filtering."
+- Labelling issues can help with organization and filtering.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
