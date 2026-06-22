@@ -311,7 +311,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction</h1>
-        <p>Last updated on 2025-07-15 |
+        <p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Issue-Tracking/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -357,44 +357,96 @@ and GitHub issues.</p>
 <figure><img src="fig/issue_tracking_intro.png" alt="Collaborative tracking in the public eye. Decorative image of no substance." class="figure mx-auto d-block"></figure><p>Issue trackers can be internal (team-facing) or external
 (user-facing). In this lesson, students will learn about issue tracking
 through the use of GitHub Issues.</p>
+<div id="your-mission-welcome-to-the-starsort-team" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="your-mission-welcome-to-the-starsort-team" class="callout-inner">
+<h3 class="callout-title">Your mission: welcome to the StarSort
+team!</h3>
+<div class="callout-content">
+<p>To make this concrete, you’ll spend this lesson role-playing a new
+contributor to <strong>StarSort</strong> — a (fictional) open-source
+research tool that sorts and catalogs telescope images. The maintainers
+are friendly but swamped, and the issue tracker is how the whole team
+tracks work. Throughout the lesson you’ll file bug reports, triage the
+backlog, and set up templates — just like a real contributor would.</p>
+<p>(You’ll do all of this in <strong>your own practice
+repository</strong> — StarSort is just the story we’ll use to make it
+fun.)</p>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="the-benefits-of-issue-tracking">The Benefits of Issue Tracking<a class="anchor" aria-label="anchor" href="#the-benefits-of-issue-tracking"></a></h2>
-<hr class="half-width"><p>Issue tracking has numerous benefits. Some of the main ones are:</p>
-<ul><li>
-<em>Visibility</em>: Work to be done is captured in one location
-where all team members can access it</li>
-<li>
-<em>Collaboration</em>: Issue trackers enable good project
-collaboration. Work can be captured, organized, managed, and discussed
-in a single location</li>
-<li>
-<em>Transparency</em>: If the issue tracking system is user-facing,
-users can see the status of work completed and add more information</li>
-</ul></section><section><h2 class="section-heading" id="github-issues">GitHub Issues<a class="anchor" aria-label="anchor" href="#github-issues"></a></h2>
+<hr class="half-width"><p>Why bother, instead of a pile of sticky notes and “I’ll remember it”
+promises?</p>
+<table class="table"><colgroup><col width="32%"><col width="67%"></colgroup><thead><tr><th>Benefit</th>
+<th>What it gives you</th>
+</tr></thead><tbody><tr><td><strong>Visibility</strong></td>
+<td>All the work to be done lives in one place every team member can
+see.</td>
+</tr><tr><td><strong>Collaboration</strong></td>
+<td>Work can be captured, organized, discussed, and assigned in a single
+location.</td>
+</tr><tr><td><strong>Transparency</strong></td>
+<td>If the tracker is user-facing, users can follow progress and chime
+in.</td>
+</tr></tbody></table><div id="where-does-genai-fit" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="where-does-genai-fit" class="callout-inner">
+<h3 class="callout-title">Where does genAI fit?</h3>
+<div class="callout-content">
+<p>Generative AI (LLMs like ChatGPT and Claude) is surprisingly handy
+for issue tracking — it can turn messy notes into a clear bug report,
+suggest labels, or summarize a long discussion thread. We’ll point out
+useful spots throughout the lesson. The catch, as always: the AI drafts,
+but <strong>you</strong> review for accuracy.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="github-issues">GitHub Issues<a class="anchor" aria-label="anchor" href="#github-issues"></a></h2>
 <hr class="half-width"><p>Numerous different issue tracking systems exist - both commercial and
 open-source, integrated and stand-alone.</p>
-<p>GitHub integrates issue tracking into their version control system.
-Every project on GitHub can enable an integrated issue tracker.</p>
-<figure><img src="fig/intersect-nav.png" alt="INTERSECT training repository navigation bar, showing, from left to right: Code, Issues, Pull Requests, Actions, Projects, Security, Insights" class="figure mx-auto d-block"></figure><p>To access a repository’s issues, navigate to the repository root page
-and click on “Issues” in the navigation bar. This will take you to the
-page of all “Open” issues.</p>
-<figure><img src="fig/intersect-issues.png" alt="INTERSECT training repository Issues pages" class="figure mx-auto d-block"></figure><p>Click on an issue to open it and read its details, plus any
-discussion on that issue.</p>
-<figure><img src="fig/intersect-issue-13.png" alt='INTERSECT training repository issue 13, titled "add merely useful + turing way to list resources?"' class="figure mx-auto d-block"></figure><p>You can also change the default filter on the Issues page by status
-(“Open” or “Closed”), author, and more.</p>
-<figure><img src="fig/intersect-filter.png" alt="Issue top-bar filter options which include Open, Closed, Author, Label, Projects, Milestones, Assignee, and Sort" class="figure mx-auto d-block"></figure><div id="browsing-open-issues" class="callout discussion">
+<p>GitHub integrates issue tracking right into version control: every
+project on GitHub can enable an issue tracker, reached from the
+<strong>Issues</strong> tab in the repository’s navigation bar.</p>
+<figure><img src="fig/intersect-nav.png" alt="INTERSECT training repository navigation bar, showing, from left to right: Code, Issues, Pull Requests, Actions, Projects, Security, Insights" class="figure mx-auto d-block"></figure><p>The Issues page lists all open issues; click any one to read its
+details and discussion. You can filter the list by status (Open/Closed),
+author, label, and more.</p>
+<figure><img src="fig/intersect-issues.png" alt="INTERSECT training repository Issues pages" class="figure mx-auto d-block"></figure><div id="scavenger-hunt-browsing-open-issues" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
-<div id="browsing-open-issues" class="callout-inner">
-<h3 class="callout-title">Browsing Open Issues</h3>
+<span class="callout-header">Challenge</span>
+<div id="scavenger-hunt-browsing-open-issues" class="callout-inner">
+<h3 class="callout-title">Scavenger Hunt: Browsing Open Issues</h3>
 <div class="callout-content">
-<p>Navigate to <a href="https://github.com/spack/spack" class="external-link">https://github.com/spack/spack</a>
+<p>A real project’s tracker can be huge. Let’s explore one. Navigate to
+<a href="https://github.com/spack/spack" class="external-link">https://github.com/spack/spack</a>
 and find the issues page.</p>
 <ul><li>How many issues are currently open?</li>
 <li>How many have been closed?</li>
 <li>How many labels are there?</li>
 </ul></div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>Open vs. closed counts are the toggles at the top of the issues list;
+the label count is on the <strong>Labels</strong> button (or the
+<code>/labels</code> page). The exact numbers change daily — that’s the
+point: the tracker is dynamic and constantly updated.</p>
+</div>
+</div>
 </div>
 </div>
 <div id="keypoints1" class="callout keypoints">
@@ -475,8 +527,8 @@ any links that you are not going to use.
   "url": "https://INTERSECT-training.github.io/Issue-Tracking/introduction.html",
   "identifier": "https://INTERSECT-training.github.io/Issue-Tracking/introduction.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2025-07-15",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

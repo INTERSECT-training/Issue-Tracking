@@ -119,11 +119,11 @@
   Issue Tracking
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 67%" class="percentage">
-    67%
+<aside class="col-md-12 lesson-progress"><div style="width: 73%" class="percentage">
+    73%
   </div>
   <div class="progress intersect">
-    <div class="progress-bar intersect" role="progressbar" style="width: 67%" aria-valuenow="67" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar intersect" role="progressbar" style="width: 73%" aria-valuenow="73" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -312,7 +312,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Issue Templates</h1>
-        <p>Last updated on 2025-07-15 |
+        <p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Issue-Tracking/edit/main/episodes/templates.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -354,6 +354,12 @@ specific sections, data, instructions, etc.</p>
 <p>They are customizable for every project. You can add as many
 templates as makes sense for your project, or you can have none at
 all.</p>
+<p>Remember the good-issue table from earlier? A template is how you
+incorporate those items right into the “New issue” experience, so
+<em>every</em> contributor’s bug report comes with steps-to- reproduce
+and expected-vs-actual sections already laid out. It’s the StarSort
+maintainers’ favorite trick for getting reports they can actually act
+on.</p>
 <p>In this episode, we will learn the basics of issue templates.</p>
 </section><section><h2 class="section-heading" id="default-issue-templates">Default Issue Templates<a class="anchor" aria-label="anchor" href="#default-issue-templates"></a></h2>
 <hr class="half-width"><p>GitHub has a quick start default feature for those wishing to use
@@ -391,9 +397,11 @@ with whatever you’d like.</p>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="custom-issue-templates">Custom Issue Templates<a class="anchor" aria-label="anchor" href="#custom-issue-templates"></a></h2>
-<hr class="half-width"><p>We now have templates for both bug reports and feature requests. For
-this project, however, we also want to create a template for Design
-Discussions. Let’s make this custom template.</p>
+<hr class="half-width"><p>We now have templates for both bug reports and feature requests. The
+StarSort maintainers have a request, though: they want a template for
+<strong>Design Discussions</strong>, so proposals like your “support
+FITS format” idea from earlier come in with a consistent shape. Let’s
+build that custom template.</p>
 <p>When we created our first template, GitHub did the setup for us. If
 you navigate back to your main page, you will see a new directory has
 been created.</p>
@@ -470,6 +478,23 @@ sections:</p>
 </div>
 </div>
 </div>
+<div id="genai-draft-a-template-in-seconds" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-draft-a-template-in-seconds" class="callout-inner">
+<h3 class="callout-title">GenAI: Draft a template in seconds</h3>
+<div class="callout-content">
+<p>Templates are structured, repetitive text — exactly what LLMs do
+well. Try asking one: <em>“Write a GitHub issue template (with YAML
+front matter) for reporting a performance problem in a scientific Python
+tool.”</em> Then <strong>review and trim</strong> it to fit your project
+— AI tends to over-produce sections you don’t need, and “less is more”
+still applies.</p>
+</div>
+</div>
+</div>
 <p>We now have three issue templates available for use.</p>
 <figure><img src="fig/three-issue-template-list.png" alt="New issue page with three templates available - Bug report, Design discussion, and Feature request" class="figure mx-auto d-block"></figure></div>
 </section><section><h2 class="section-heading" id="incorporate-external-links">Incorporate External Links<a class="anchor" aria-label="anchor" href="#incorporate-external-links"></a></h2>
@@ -490,26 +515,31 @@ a user is allowed to open a blank issue if one of the provided templates
 doesn’t quite fit their need.</p>
 <p>The second option, <code>contact_links</code>, allows you to list
 links to external sites that will show up in the template chooser.</p>
-<div id="ask-google" class="callout discussion">
+<div id="ask-a-friend" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="ask-google" class="callout-inner">
-<h3 class="callout-title">Ask Google</h3>
+<div id="ask-a-friend" class="callout-inner">
+<h3 class="callout-title">Ask a Friend</h3>
 <div class="callout-content">
-<p>Create a <code>config.yml</code> for your repository. In the
-<code>config.yml</code>:</p>
+<p>Not every question belongs in the issue tracker — usage questions are
+often better in a discussion forum or chat. StarSort has a community
+discussions page, so let’s send people there instead of letting “how do
+I…?” issues pile up. Create a <code>config.yml</code> for your
+repository. In it:</p>
 <ul><li>Enable blank issues</li>
-<li>Create a link with the name, “Ask Google,” a link to www.google.com,
-and the description, “Google may know your answer.”</li>
+<li>Add a contact link named “StarSort Community Q&amp;A” pointing to a
+discussions/forum URL of your choice (e.g., your repo’s GitHub
+Discussions page), with a description like “Ask usage questions
+here.”</li>
 </ul><p>Then commit the changes directly to your main branch.</p>
 </div>
 </div>
 </div>
-<p>Our template chooser now has our three templates and a link to
-Google.</p>
-<figure><img src="fig/ask-google-template.png" alt='New issue page with three templates available - Bug report, Design discussion, and Feature request - plus an additional button with custom external link to "Ask Google"' class="figure mx-auto d-block"></figure><p>And that’s all, folks! You now know much more about GitHub
+<p>Our template chooser now shows our three templates plus the external
+community link.</p>
+<figure><img src="fig/ask-google-template.png" alt="New issue page with three templates available - Bug report, Design discussion, and Feature request - plus an additional button with a custom external contact link" class="figure mx-auto d-block"></figure><p>And that’s all, folks! You now know much more about GitHub
 Issues.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -520,8 +550,12 @@ Issues.</p>
 <div class="callout-content">
 <ul><li>Templates can be incorporated into any GitHub repository and can
 make issue creation more structured.</li>
+<li>A good template incorporates the “good issue” table into every new
+report.</li>
 <li>External links can be listed with the templates to help direct users
 to external resources.</li>
+<li>GenAI can draft a template quickly — review and trim it to fit your
+project.</li>
 </ul></div>
 </div>
 </div>
@@ -589,8 +623,8 @@ any links that you are not going to use.
   "url": "https://INTERSECT-training.github.io/Issue-Tracking/templates.html",
   "identifier": "https://INTERSECT-training.github.io/Issue-Tracking/templates.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2025-07-15",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

@@ -312,13 +312,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Labelling Issues</h1>
-        <p>Last updated on 2025-07-15 |
+        <p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Issue-Tracking/edit/main/episodes/labels.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 14 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -334,6 +334,7 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul><li>How do you make and assign labels to issues?</li>
+<li>How do labels help you triage and prioritize work?</li>
 </ul></div>
 </div>
 </div>
@@ -341,7 +342,8 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Learn how to use labels for GitHub issues.</li>
+<ul><li>Learn how to make, modify, apply, and filter by labels for GitHub
+issues.</li>
 </ul></div>
 </div>
 </div>
@@ -383,25 +385,26 @@ communities with many collaborators. This is not always the case in
 Research Software Engineering, however, so we will need to modify
 these.</p>
 </section><section><h2 class="section-heading" id="modifying-labels">Modifying Labels<a class="anchor" aria-label="anchor" href="#modifying-labels"></a></h2>
-<hr class="half-width"><p>Labels can be added, edited, or deleted from the labels page.</p>
-<figure><img src="../fig/label-highlights.png" alt="On the Labels page, individual label actions (Edit, Delete) circled" class="figure mx-auto d-block"></figure><p>Each label has three attributes:</p>
-<ul><li>Label name</li>
-<li>Description</li>
-<li>Color (Hex code)</li>
-</ul><figure><img src="../fig/label-attributes.png" alt='Label attributes - label name, description, color - and the buttons "Cancel" and "Save changes"' class="figure mx-auto d-block"></figure><div id="label-maker" class="callout discussion">
+<hr class="half-width"><p>Labels can be added, edited, or deleted from the
+<strong>Labels</strong> page. Each label has three attributes: a
+<strong>name</strong>, a <strong>description</strong>, and a
+<strong>color</strong> (hex code).</p>
+<figure><img src="../fig/label-attributes.png" alt='Label attributes - label name, description, color - and the buttons "Cancel" and "Save changes"' class="figure mx-auto d-block"></figure><div id="tidy-up-starsorts-labels" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="label-maker" class="callout-inner">
-<h3 class="callout-title">Label Maker</h3>
+<div id="tidy-up-starsorts-labels" class="callout-inner">
+<h3 class="callout-title">Tidy Up StarSort’s Labels</h3>
 <div class="callout-content">
-<p>Navigate to your practice repository’s label page.</p>
+<p>The StarSort maintainers want the label set to fit their small
+research team. In <strong>your practice repository’s</strong> Labels
+page:</p>
 <ul><li>Add a new label for <code>discussion</code>
 </li>
 <li>Remove the label for <code>good first issue</code>
 </li>
-<li>Modify the color on the <code>wontfix</code> label to your favorite
+<li>Change the color of the <code>wontfix</code> label to your favorite
 color</li>
 </ul></div>
 </div>
@@ -417,18 +420,37 @@ the dropdown.</p>
 you will see the “Labels” option on the right-hand side.</p>
 <figure><img src="../fig/label-option-in-issue.png" alt='Highlighted Labels section on the right-hand side within a single issue (has been labeled "enhancement")' class="figure mx-auto d-block"></figure><p>Click on “Labels”. A dropdown will appear in which you can select or
 deselect your preferred label(s).</p>
-<figure><img src="../fig/label-dropdown-in-issue.png" alt="Cog-wheel option selected to reveal the label dropdown within a single issue" class="figure mx-auto d-block"></figure><div id="stick-the-label" class="callout discussion">
+<figure><img src="../fig/label-dropdown-in-issue.png" alt="Cog-wheel option selected to reveal the label dropdown within a single issue" class="figure mx-auto d-block"></figure><div id="triage-time" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="stick-the-label" class="callout-inner">
-<h3 class="callout-title">Stick the Label</h3>
+<div id="triage-time" class="callout-inner">
+<h3 class="callout-title">Triage Time</h3>
 <div class="callout-content">
-<p>Navigate to your practice repository’s issue page.</p>
-<ul><li>Create a new issue entitled “[YOUR NAME]’s label issue”</li>
-<li>Add the <code>discussion</code> label</li>
+<p>A new idea came in for StarSort: supporting a new image format. In
+<strong>your practice repository’s</strong> issue page:</p>
+<ul><li>Create a new issue entitled “[YOUR NAME]: support FITS image
+format”</li>
+<li>Add the <code>discussion</code> label so the team knows it needs
+further discussion</li>
 </ul></div>
+</div>
+</div>
+<div id="genai-triage-assistant" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-triage-assistant" class="callout-inner">
+<h3 class="callout-title">GenAI: Triage assistant</h3>
+<div class="callout-content">
+<p>Faced with a backlog of 50 unlabeled issues? An LLM can read an
+issue’s text and <em>suggest</em> a label (bug, enhancement, question…)
+or even a priority. It’s a great way to get a first pass — but a human
+should confirm before the labels drive real decisions, since a
+mislabeled issue hides in the wrong filter.</p>
+</div>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="filter-by-labels">Filter by Labels<a class="anchor" aria-label="anchor" href="#filter-by-labels"></a></h2>
@@ -443,23 +465,36 @@ says “Filter by label” rather than “Apply labels.”</p>
 issues that have that label applied.</p>
 <p>You can select multiple labels or use the hints at the bottom of the
 “Labels” dropdown to do more advanced filtering, such as exclusion.</p>
-<div id="practice-filtering" class="callout discussion">
+<div id="filter-like-a-pro" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
-<div id="practice-filtering" class="callout-inner">
-<h3 class="callout-title">Practice Filtering</h3>
+<span class="callout-header">Challenge</span>
+<div id="filter-like-a-pro" class="callout-inner">
+<h3 class="callout-title">Filter Like a Pro</h3>
 <div class="callout-content">
-<p>Navigate to <a href="https://github.com/spack/spack" class="external-link">https://github.com/spack/spack</a>
+<p>Let’s go back to some real research software. Navigate to <a href="https://github.com/spack/spack" class="external-link">https://github.com/spack/spack</a>
 and find the issues page.</p>
-<ul><li>Filter by the <code>architecture</code> label</li>
-<li>Filter by both the <code>architecture</code> and
-<code>architectures</code> labels</li>
-<li>(CHALLENGE) Filter by <code>question</code> but exclude
-<code>bug</code>
-</li>
+<ul><li>Filter by the <code>environments</code> label?</li>
+<li>Filter by both the <code>environments</code> and <code>bug</code>
+labels?</li>
+<li>(CHALLENGE) Filter by <code>question</code> but <em>exclude</em>
+<code>bug</code>?</li>
 </ul></div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>The last one uses the exclusion syntax in the search bar:
+<code>is:issue is:open label:question -label:bug</code>. The
+<code>-label:</code> prefix is the trick most people don’t know.</p>
+</div>
+</div>
 </div>
 </div>
 <p>You now understand how to make, change, apply, and filter by labels
@@ -472,6 +507,9 @@ in GitHub Issues.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul><li>Labelling issues can help with organization and filtering.</li>
+<li>Curate the default label set to fit your project and team size.</li>
+<li>Filtering (including exclusion, e.g. <code>-label:bug</code>) makes
+a big backlog manageable.</li>
 </ul></div>
 </div>
 </div>
@@ -539,8 +577,8 @@ any links that you are not going to use.
   "url": "https://INTERSECT-training.github.io/Issue-Tracking/instructor/labels.html",
   "identifier": "https://INTERSECT-training.github.io/Issue-Tracking/instructor/labels.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2025-07-15",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

@@ -226,7 +226,8 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#open-an-issue">Open an Issue</a></li>
+        <ul><li><a href="#what-makes-a-good-issue">What Makes a <em>Good</em> Issue?</a></li>
+<li><a href="#open-an-issue">Open an Issue</a></li>
 <li><a href="#interact-with-an-open-issue">Interact with an Open Issue</a></li>
 <li><a href="#close-an-issue">Close an Issue</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -311,7 +312,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Basic Issue Tracking</h1>
-        <p>Last updated on 2025-07-15 |
+        <p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Issue-Tracking/edit/main/episodes/basic-issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -332,7 +333,8 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>How do you make an issue?</li>
+<ul><li>What makes a <em>good</em> issue?</li>
+<li>How do you make an issue?</li>
 <li>How do you interact with an open issue?</li>
 <li>How do you close an issue?</li>
 </ul></div>
@@ -342,46 +344,90 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Become familiar with basic actions on GitHub Issues</li>
+<ul><li>Recognize what makes an issue clear and actionable.</li>
+<li>Become familiar with basic actions on GitHub Issues.</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="open-an-issue">Open an Issue<a class="anchor" aria-label="anchor" href="#open-an-issue"></a></h2>
-<hr class="half-width"><p>To open a new issue, navigate to the issue page. Here you will see a
-green “New issue” button in the top-right. Click this to start the
-creation of a new issue.</p>
-<figure><img src="../fig/new-issue.png" alt="New issue button circled in red. Button is on the top-right on the Issues page." class="figure mx-auto d-block"></figure><p>This will load a new page with an empty issue.</p>
-<figure><img src="../fig/empty-issue.png" alt="Empty issue page after clicking new issue button. All details (Title, Write, Assignees, etc.) are empty." class="figure mx-auto d-block"></figure><p>A new issue has several parts:</p>
+<section><h2 class="section-heading" id="what-makes-a-good-issue">What Makes a <em>Good</em> Issue?<a class="anchor" aria-label="anchor" href="#what-makes-a-good-issue"></a></h2>
+<hr class="half-width"><p>Anyone can click “New issue” and type “it’s broken.” The skill worth
+learning is writing an issue a teammate can actually <em>act on</em>
+without a follow-up conversation. A good bug report usually has:</p>
+<table class="table"><colgroup><col width="42%"><col width="57%"></colgroup><thead><tr><th>Ingredient</th>
+<th>Why it matters</th>
+</tr></thead><tbody><tr><td><strong>Clear, specific title</strong></td>
+<td>“Crash when sorting empty folder” beats “bug” — it’s findable and
+scannable.</td>
+</tr><tr><td><strong>Steps to reproduce</strong></td>
+<td>If we can’t trigger it, we can’t fix it. Number the steps.</td>
+</tr><tr><td><strong>Expected vs. actual</strong></td>
+<td>What <em>should</em> have happened, and what <em>did</em>.</td>
+</tr><tr><td><strong>Environment</strong></td>
+<td>OS, version, language version — the details that change
+behavior.</td>
+</tr><tr><td><strong>One issue = one problem</strong></td>
+<td>Don’t bundle five bugs in one ticket; they can’t be tracked or
+closed independently.</td>
+</tr></tbody></table><p>A good <em>feature request</em> is similar: what you want,
+<strong>why</strong> (the motivation/use case), and any alternatives you
+considered. Keep these in mind for every issue you open today.</p>
+</section><section><h2 class="section-heading" id="open-an-issue">Open an Issue<a class="anchor" aria-label="anchor" href="#open-an-issue"></a></h2>
+<hr class="half-width"><p>Click the green <strong>New issue</strong> button (top-right of the
+Issues page) to start a new issue.</p>
+<figure><img src="../fig/new-issue.png" alt="New issue button circled in red. Button is on the top-right on the Issues page." class="figure mx-auto d-block"></figure><p>A new issue has a few parts:</p>
 <ul><li>
-<em>Title</em>: This will display on the main “Issue” page.</li>
+<em>Title</em>: displays on the main Issues page.</li>
 <li>
-<em>Write</em>: This is an open area for the details of the issue.
-GitHub support Markdown formatting.</li>
+<em>Write</em>: the details of the issue — GitHub supports
+<strong>Markdown</strong> formatting.</li>
 <li>
-<em>Preview</em>: This will preview the Markdown-rendered version of
-the details.</li>
-</ul><p>Once an issue is filled out, the “Submit new issue” button will
-highlight.</p>
-<figure><img src="../fig/submit-new-issue.png" alt="Submit new issue button is now highlighted and available to press" class="figure mx-auto d-block"></figure><div id="open-a-new-issue" class="callout discussion">
+<em>Preview</em>: shows the Markdown-rendered version before you
+submit.</li>
+</ul><p>Once it’s filled out, the <strong>Submit new issue</strong> button
+activates.</p>
+<figure><img src="../fig/submit-new-issue.png" alt="Submit new issue button is now highlighted and available to press" class="figure mx-auto d-block"></figure><div id="file-your-first-starsort-bug" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="open-a-new-issue" class="callout-inner">
-<h3 class="callout-title">Open a New Issue</h3>
+<div id="file-your-first-starsort-bug" class="callout-inner">
+<h3 class="callout-title">File Your First StarSort Bug</h3>
 <div class="callout-content">
-<p>Navigate to your practice repository’s issue page.</p>
-<ul><li>Open a new issue titled “[YOUR NAME]’s First Issue”</li>
-<li>In the “Write” section, make a heading entitled “Description”</li>
-<li>Write a short sentence telling us what you ate for breakfast this
-morning</li>
-<li>Add a code block with “Hello, World” coded in your favorite
-language</li>
-<li>Preview your issue to make sure it looks right</li>
-<li>Submit the issue!</li>
+<p>You’re testing StarSort and it crashes when you point it at an empty
+image folder. Time to file a proper bug report! In <strong>your practice
+repository’s</strong> issue page:</p>
+<ul><li>Open a new issue with a clear, specific <strong>title</strong>
+</li>
+<li>In the “Write” section, add a <code>## Steps to Reproduce</code>
+heading and number the steps.</li>
+<li>Add a section for <strong>Expected vs. Actual</strong>
+behavior.</li>
+<li>Include a code block showing the (made-up) error message StarSort
+printed.</li>
+<li>
+<strong>Preview</strong> to check your Markdown, then
+<strong>submit</strong>!</li>
 </ul></div>
+</div>
+</div>
+<div id="genai-from-messy-notes-to-a-clean-report" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-from-messy-notes-to-a-clean-report" class="callout-inner">
+<h3 class="callout-title">GenAI: from messy notes to a clean report</h3>
+<div class="callout-content">
+<p>Bug reports often start as a jumble: “it broke when the folder was
+empty, error said IndexError, was on my mac.” Try pasting notes like
+that into an LLM and asking it to format a bug report with steps to
+reproduce and expected/actual sections. Then <strong>check it against
+the good issue table</strong> — did it invent steps or details you
+didn’t give it? You supply the facts; the AI just tidies the
+structure.</p>
+</div>
 </div>
 </div>
 <p>On the right-hand side, there are more options that can be
@@ -436,25 +482,26 @@ easily reopen it by clicking the “Reopen” button!</p>
 <p>You can do other actions like “Edit” the title or original issue
 information, tag other users, link to other issues or pull requests, and
 more.</p>
-<div id="tag-your-instructor" class="callout discussion">
+<div id="loop-in-a-maintainer" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="tag-your-instructor" class="callout-inner">
-<h3 class="callout-title">Tag Your Instructor</h3>
+<div id="loop-in-a-maintainer" class="callout-inner">
+<h3 class="callout-title">Loop in a Maintainer</h3>
 <div class="callout-content">
-<p>Navigate to your issue from the previous exercise.</p>
+<p>A StarSort maintainer should know about your bug. Navigate to your
+issue from the previous exercise.</p>
 <ul><li>Write a new comment on the issue, mentioning your instructor using
 the <code>@</code> symbol.</li>
-<li>Add the comment to the issue</li>
+<li>Add the comment to the issue.</li>
 </ul></div>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="close-an-issue">Close an Issue<a class="anchor" aria-label="anchor" href="#close-an-issue"></a></h2>
-<hr class="half-width"><p>We are done with this issue. We have completed the work on it, had
-our discussion, and now we don’t want it cluttering up our issue
-list.</p>
+<hr class="half-width"><p>Good news — a maintainer “fixed” your StarSort bug! The work is done
+and the discussion is over, so we don’t want it cluttering up the
+open-issues list anymore.</p>
 <p>Closing an issue is simple - just click the “Close issue” button.</p>
 <figure><img src="../fig/close-basic-issue.png" alt="Close issue button with no additional features" class="figure mx-auto d-block"></figure><p>If you start to type in the comment box, this will change into a
 “Close with comment” button.</p>
@@ -482,12 +529,16 @@ list.</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>New issues can be opened in a repository using the ‘New issue’
+<ul><li>A good issue has a clear title, steps to reproduce, expected
+vs. actual behavior, and covers one problem.</li>
+<li>New issues can be opened in a repository using the ‘New issue’
 button.</li>
 <li>Text on issues use Markdown styling for formatting.</li>
 <li>A user can interact with issues in multiple ways: commenting,
 mentioning others, linking to other issues and pull requests, and
 more.</li>
+<li>GenAI can format messy notes into a structured report, but you must
+supply and verify the facts.</li>
 </ul></div>
 </div>
 </div>
@@ -555,8 +606,8 @@ any links that you are not going to use.
   "url": "https://INTERSECT-training.github.io/Issue-Tracking/instructor/basic-issues.html",
   "identifier": "https://INTERSECT-training.github.io/Issue-Tracking/instructor/basic-issues.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2025-07-15",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

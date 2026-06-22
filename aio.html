@@ -345,7 +345,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2025-07-15 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Issue-Tracking/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -391,50 +391,117 @@ and GitHub issues.</p>
 <figure><img src="fig/issue_tracking_intro.png" alt="Collaborative tracking in the public eye. Decorative image of no substance." class="figure mx-auto d-block"></figure><p>Issue trackers can be internal (team-facing) or external
 (user-facing). In this lesson, students will learn about issue tracking
 through the use of GitHub Issues.</p>
+<div id="your-mission-welcome-to-the-starsort-team" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="your-mission-welcome-to-the-starsort-team" class="callout-inner">
+<h3 class="callout-title">Your mission: welcome to the StarSort
+team!</h3>
+<div class="callout-content">
+<p>To make this concrete, you’ll spend this lesson role-playing a new
+contributor to <strong>StarSort</strong> — a (fictional) open-source
+research tool that sorts and catalogs telescope images. The maintainers
+are friendly but swamped, and the issue tracker is how the whole team
+tracks work. Throughout the lesson you’ll file bug reports, triage the
+backlog, and set up templates — just like a real contributor would.</p>
+<p>(You’ll do all of this in <strong>your own practice
+repository</strong> — StarSort is just the story we’ll use to make it
+fun.)</p>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="the-benefits-of-issue-tracking">The Benefits of Issue Tracking<a class="anchor" aria-label="anchor" href="#the-benefits-of-issue-tracking"></a>
 </h2>
 <hr class="half-width">
-<p>Issue tracking has numerous benefits. Some of the main ones are:</p>
-<ul>
-<li>
-<em>Visibility</em>: Work to be done is captured in one location
-where all team members can access it</li>
-<li>
-<em>Collaboration</em>: Issue trackers enable good project
-collaboration. Work can be captured, organized, managed, and discussed
-in a single location</li>
-<li>
-<em>Transparency</em>: If the issue tracking system is user-facing,
-users can see the status of work completed and add more information</li>
-</ul></section><section><h2 class="section-heading" id="github-issues">GitHub Issues<a class="anchor" aria-label="anchor" href="#github-issues"></a>
+<p>Why bother, instead of a pile of sticky notes and “I’ll remember it”
+promises?</p>
+<table class="table">
+<colgroup>
+<col width="32%">
+<col width="67%">
+</colgroup>
+<thead><tr>
+<th>Benefit</th>
+<th>What it gives you</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Visibility</strong></td>
+<td>All the work to be done lives in one place every team member can
+see.</td>
+</tr>
+<tr>
+<td><strong>Collaboration</strong></td>
+<td>Work can be captured, organized, discussed, and assigned in a single
+location.</td>
+</tr>
+<tr>
+<td><strong>Transparency</strong></td>
+<td>If the tracker is user-facing, users can follow progress and chime
+in.</td>
+</tr>
+</tbody>
+</table>
+<div id="where-does-genai-fit" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="where-does-genai-fit" class="callout-inner">
+<h3 class="callout-title">Where does genAI fit?</h3>
+<div class="callout-content">
+<p>Generative AI (LLMs like ChatGPT and Claude) is surprisingly handy
+for issue tracking — it can turn messy notes into a clear bug report,
+suggest labels, or summarize a long discussion thread. We’ll point out
+useful spots throughout the lesson. The catch, as always: the AI drafts,
+but <strong>you</strong> review for accuracy.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="github-issues">GitHub Issues<a class="anchor" aria-label="anchor" href="#github-issues"></a>
 </h2>
 <hr class="half-width">
 <p>Numerous different issue tracking systems exist - both commercial and
 open-source, integrated and stand-alone.</p>
-<p>GitHub integrates issue tracking into their version control system.
-Every project on GitHub can enable an integrated issue tracker.</p>
-<figure><img src="fig/intersect-nav.png" alt="INTERSECT training repository navigation bar, showing, from left to right: Code, Issues, Pull Requests, Actions, Projects, Security, Insights" class="figure mx-auto d-block"></figure><p>To access a repository’s issues, navigate to the repository root page
-and click on “Issues” in the navigation bar. This will take you to the
-page of all “Open” issues.</p>
-<figure><img src="fig/intersect-issues.png" alt="INTERSECT training repository Issues pages" class="figure mx-auto d-block"></figure><p>Click on an issue to open it and read its details, plus any
-discussion on that issue.</p>
-<figure><img src="fig/intersect-issue-13.png" alt='INTERSECT training repository issue 13, titled "add merely useful + turing way to list resources?"' class="figure mx-auto d-block"></figure><p>You can also change the default filter on the Issues page by status
-(“Open” or “Closed”), author, and more.</p>
-<figure><img src="fig/intersect-filter.png" alt="Issue top-bar filter options which include Open, Closed, Author, Label, Projects, Milestones, Assignee, and Sort" class="figure mx-auto d-block"></figure><div id="browsing-open-issues" class="callout discussion">
+<p>GitHub integrates issue tracking right into version control: every
+project on GitHub can enable an issue tracker, reached from the
+<strong>Issues</strong> tab in the repository’s navigation bar.</p>
+<figure><img src="fig/intersect-nav.png" alt="INTERSECT training repository navigation bar, showing, from left to right: Code, Issues, Pull Requests, Actions, Projects, Security, Insights" class="figure mx-auto d-block"></figure><p>The Issues page lists all open issues; click any one to read its
+details and discussion. You can filter the list by status (Open/Closed),
+author, label, and more.</p>
+<figure><img src="fig/intersect-issues.png" alt="INTERSECT training repository Issues pages" class="figure mx-auto d-block"></figure><div id="scavenger-hunt-browsing-open-issues" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
-<div id="browsing-open-issues" class="callout-inner">
-<h3 class="callout-title">Browsing Open Issues</h3>
+<span class="callout-header">Challenge</span>
+<div id="scavenger-hunt-browsing-open-issues" class="callout-inner">
+<h3 class="callout-title">Scavenger Hunt: Browsing Open Issues</h3>
 <div class="callout-content">
-<p>Navigate to <a href="https://github.com/spack/spack" class="external-link">https://github.com/spack/spack</a>
+<p>A real project’s tracker can be huge. Let’s explore one. Navigate to
+<a href="https://github.com/spack/spack" class="external-link">https://github.com/spack/spack</a>
 and find the issues page.</p>
 <ul>
 <li>How many issues are currently open?</li>
 <li>How many have been closed?</li>
 <li>How many labels are there?</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>Open vs. closed counts are the toggles at the top of the issues list;
+the label count is on the <strong>Labels</strong> button (or the
+<code>/labels</code> page). The exact numbers change daily — that’s the
+point: the tracker is dynamic and constantly updated.</p>
+</div>
 </div>
 </div>
 </div>
@@ -460,7 +527,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-basic-issues"><p>Content from <a href="basic-issues.html">Basic Issue Tracking</a></p>
 <hr>
-<p>Last updated on 2025-07-15 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Issue-Tracking/edit/main/episodes/basic-issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -474,6 +541,7 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
+<li>What makes a <em>good</em> issue?</li>
 <li>How do you make an issue?</li>
 <li>How do you interact with an open issue?</li>
 <li>How do you close an issue?</li>
@@ -486,52 +554,118 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Become familiar with basic actions on GitHub Issues</li>
+<li>Recognize what makes an issue clear and actionable.</li>
+<li>Become familiar with basic actions on GitHub Issues.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="open-an-issue">Open an Issue<a class="anchor" aria-label="anchor" href="#open-an-issue"></a>
+<section><h2 class="section-heading" id="what-makes-a-good-issue">What Makes a <em>Good</em> Issue?<a class="anchor" aria-label="anchor" href="#what-makes-a-good-issue"></a>
 </h2>
 <hr class="half-width">
-<p>To open a new issue, navigate to the issue page. Here you will see a
-green “New issue” button in the top-right. Click this to start the
-creation of a new issue.</p>
-<figure><img src="fig/new-issue.png" alt="New issue button circled in red. Button is on the top-right on the Issues page." class="figure mx-auto d-block"></figure><p>This will load a new page with an empty issue.</p>
-<figure><img src="fig/empty-issue.png" alt="Empty issue page after clicking new issue button. All details (Title, Write, Assignees, etc.) are empty." class="figure mx-auto d-block"></figure><p>A new issue has several parts:</p>
+<p>Anyone can click “New issue” and type “it’s broken.” The skill worth
+learning is writing an issue a teammate can actually <em>act on</em>
+without a follow-up conversation. A good bug report usually has:</p>
+<table class="table">
+<colgroup>
+<col width="42%">
+<col width="57%">
+</colgroup>
+<thead><tr>
+<th>Ingredient</th>
+<th>Why it matters</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Clear, specific title</strong></td>
+<td>“Crash when sorting empty folder” beats “bug” — it’s findable and
+scannable.</td>
+</tr>
+<tr>
+<td><strong>Steps to reproduce</strong></td>
+<td>If we can’t trigger it, we can’t fix it. Number the steps.</td>
+</tr>
+<tr>
+<td><strong>Expected vs. actual</strong></td>
+<td>What <em>should</em> have happened, and what <em>did</em>.</td>
+</tr>
+<tr>
+<td><strong>Environment</strong></td>
+<td>OS, version, language version — the details that change
+behavior.</td>
+</tr>
+<tr>
+<td><strong>One issue = one problem</strong></td>
+<td>Don’t bundle five bugs in one ticket; they can’t be tracked or
+closed independently.</td>
+</tr>
+</tbody>
+</table>
+<p>A good <em>feature request</em> is similar: what you want,
+<strong>why</strong> (the motivation/use case), and any alternatives you
+considered. Keep these in mind for every issue you open today.</p>
+</section><section><h2 class="section-heading" id="open-an-issue">Open an Issue<a class="anchor" aria-label="anchor" href="#open-an-issue"></a>
+</h2>
+<hr class="half-width">
+<p>Click the green <strong>New issue</strong> button (top-right of the
+Issues page) to start a new issue.</p>
+<figure><img src="fig/new-issue.png" alt="New issue button circled in red. Button is on the top-right on the Issues page." class="figure mx-auto d-block"></figure><p>A new issue has a few parts:</p>
 <ul>
 <li>
-<em>Title</em>: This will display on the main “Issue” page.</li>
+<em>Title</em>: displays on the main Issues page.</li>
 <li>
-<em>Write</em>: This is an open area for the details of the issue.
-GitHub support Markdown formatting.</li>
+<em>Write</em>: the details of the issue — GitHub supports
+<strong>Markdown</strong> formatting.</li>
 <li>
-<em>Preview</em>: This will preview the Markdown-rendered version of
-the details.</li>
+<em>Preview</em>: shows the Markdown-rendered version before you
+submit.</li>
 </ul>
-<p>Once an issue is filled out, the “Submit new issue” button will
-highlight.</p>
-<figure><img src="fig/submit-new-issue.png" alt="Submit new issue button is now highlighted and available to press" class="figure mx-auto d-block"></figure><div id="open-a-new-issue" class="callout discussion">
+<p>Once it’s filled out, the <strong>Submit new issue</strong> button
+activates.</p>
+<figure><img src="fig/submit-new-issue.png" alt="Submit new issue button is now highlighted and available to press" class="figure mx-auto d-block"></figure><div id="file-your-first-starsort-bug" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="open-a-new-issue" class="callout-inner">
-<h3 class="callout-title">Open a New Issue</h3>
+<div id="file-your-first-starsort-bug" class="callout-inner">
+<h3 class="callout-title">File Your First StarSort Bug</h3>
 <div class="callout-content">
-<p>Navigate to your practice repository’s issue page.</p>
+<p>You’re testing StarSort and it crashes when you point it at an empty
+image folder. Time to file a proper bug report! In <strong>your practice
+repository’s</strong> issue page:</p>
 <ul>
-<li>Open a new issue titled “[YOUR NAME]’s First Issue”</li>
-<li>In the “Write” section, make a heading entitled “Description”</li>
-<li>Write a short sentence telling us what you ate for breakfast this
-morning</li>
-<li>Add a code block with “Hello, World” coded in your favorite
-language</li>
-<li>Preview your issue to make sure it looks right</li>
-<li>Submit the issue!</li>
+<li>Open a new issue with a clear, specific <strong>title</strong>
+</li>
+<li>In the “Write” section, add a <code>## Steps to Reproduce</code>
+heading and number the steps.</li>
+<li>Add a section for <strong>Expected vs. Actual</strong>
+behavior.</li>
+<li>Include a code block showing the (made-up) error message StarSort
+printed.</li>
+<li>
+<strong>Preview</strong> to check your Markdown, then
+<strong>submit</strong>!</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="genai-from-messy-notes-to-a-clean-report" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-from-messy-notes-to-a-clean-report" class="callout-inner">
+<h3 class="callout-title">GenAI: from messy notes to a clean report</h3>
+<div class="callout-content">
+<p>Bug reports often start as a jumble: “it broke when the folder was
+empty, error said IndexError, was on my mac.” Try pasting notes like
+that into an LLM and asking it to format a bug report with steps to
+reproduce and expected/actual sections. Then <strong>check it against
+the good issue table</strong> — did it invent steps or details you
+didn’t give it? You supply the facts; the AI just tidies the
+structure.</p>
 </div>
 </div>
 </div>
@@ -591,19 +725,20 @@ easily reopen it by clicking the “Reopen” button!</p>
 <p>You can do other actions like “Edit” the title or original issue
 information, tag other users, link to other issues or pull requests, and
 more.</p>
-<div id="tag-your-instructor" class="callout discussion">
+<div id="loop-in-a-maintainer" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="tag-your-instructor" class="callout-inner">
-<h3 class="callout-title">Tag Your Instructor</h3>
+<div id="loop-in-a-maintainer" class="callout-inner">
+<h3 class="callout-title">Loop in a Maintainer</h3>
 <div class="callout-content">
-<p>Navigate to your issue from the previous exercise.</p>
+<p>A StarSort maintainer should know about your bug. Navigate to your
+issue from the previous exercise.</p>
 <ul>
 <li>Write a new comment on the issue, mentioning your instructor using
 the <code>@</code> symbol.</li>
-<li>Add the comment to the issue</li>
+<li>Add the comment to the issue.</li>
 </ul>
 </div>
 </div>
@@ -611,9 +746,9 @@ the <code>@</code> symbol.</li>
 </section><section><h2 class="section-heading" id="close-an-issue">Close an Issue<a class="anchor" aria-label="anchor" href="#close-an-issue"></a>
 </h2>
 <hr class="half-width">
-<p>We are done with this issue. We have completed the work on it, had
-our discussion, and now we don’t want it cluttering up our issue
-list.</p>
+<p>Good news — a maintainer “fixed” your StarSort bug! The work is done
+and the discussion is over, so we don’t want it cluttering up the
+open-issues list anymore.</p>
 <p>Closing an issue is simple - just click the “Close issue” button.</p>
 <figure><img src="fig/close-basic-issue.png" alt="Close issue button with no additional features" class="figure mx-auto d-block"></figure><p>If you start to type in the comment box, this will change into a
 “Close with comment” button.</p>
@@ -644,12 +779,16 @@ list.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
+<li>A good issue has a clear title, steps to reproduce, expected
+vs. actual behavior, and covers one problem.</li>
 <li>New issues can be opened in a repository using the ‘New issue’
 button.</li>
 <li>Text on issues use Markdown styling for formatting.</li>
 <li>A user can interact with issues in multiple ways: commenting,
 mentioning others, linking to other issues and pull requests, and
 more.</li>
+<li>GenAI can format messy notes into a structured report, but you must
+supply and verify the facts.</li>
 </ul>
 </div>
 </div>
@@ -660,7 +799,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-labels"><p>Content from <a href="labels.html">Labelling Issues</a></p>
 <hr>
-<p>Last updated on 2025-07-15 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Issue-Tracking/edit/main/episodes/labels.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -675,6 +814,7 @@ any links that you are not going to use.
 <h3 class="card-title">Questions</h3>
 <ul>
 <li>How do you make and assign labels to issues?</li>
+<li>How do labels help you triage and prioritize work?</li>
 </ul>
 </div>
 </div>
@@ -684,7 +824,8 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Learn how to use labels for GitHub issues.</li>
+<li>Learn how to make, modify, apply, and filter by labels for GitHub
+issues.</li>
 </ul>
 </div>
 </div>
@@ -759,28 +900,27 @@ these.</p>
 </section><section><h2 class="section-heading" id="modifying-labels">Modifying Labels<a class="anchor" aria-label="anchor" href="#modifying-labels"></a>
 </h2>
 <hr class="half-width">
-<p>Labels can be added, edited, or deleted from the labels page.</p>
-<figure><img src="fig/label-highlights.png" alt="On the Labels page, individual label actions (Edit, Delete) circled" class="figure mx-auto d-block"></figure><p>Each label has three attributes:</p>
-<ul>
-<li>Label name</li>
-<li>Description</li>
-<li>Color (Hex code)</li>
-</ul>
-<figure><img src="fig/label-attributes.png" alt='Label attributes - label name, description, color - and the buttons "Cancel" and "Save changes"' class="figure mx-auto d-block"></figure><div id="label-maker" class="callout discussion">
+<p>Labels can be added, edited, or deleted from the
+<strong>Labels</strong> page. Each label has three attributes: a
+<strong>name</strong>, a <strong>description</strong>, and a
+<strong>color</strong> (hex code).</p>
+<figure><img src="fig/label-attributes.png" alt='Label attributes - label name, description, color - and the buttons "Cancel" and "Save changes"' class="figure mx-auto d-block"></figure><div id="tidy-up-starsorts-labels" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="label-maker" class="callout-inner">
-<h3 class="callout-title">Label Maker</h3>
+<div id="tidy-up-starsorts-labels" class="callout-inner">
+<h3 class="callout-title">Tidy Up StarSort’s Labels</h3>
 <div class="callout-content">
-<p>Navigate to your practice repository’s label page.</p>
+<p>The StarSort maintainers want the label set to fit their small
+research team. In <strong>your practice repository’s</strong> Labels
+page:</p>
 <ul>
 <li>Add a new label for <code>discussion</code>
 </li>
 <li>Remove the label for <code>good first issue</code>
 </li>
-<li>Modify the color on the <code>wontfix</code> label to your favorite
+<li>Change the color of the <code>wontfix</code> label to your favorite
 color</li>
 </ul>
 </div>
@@ -799,19 +939,38 @@ the dropdown.</p>
 you will see the “Labels” option on the right-hand side.</p>
 <figure><img src="fig/label-option-in-issue.png" alt='Highlighted Labels section on the right-hand side within a single issue (has been labeled "enhancement")' class="figure mx-auto d-block"></figure><p>Click on “Labels”. A dropdown will appear in which you can select or
 deselect your preferred label(s).</p>
-<figure><img src="fig/label-dropdown-in-issue.png" alt="Cog-wheel option selected to reveal the label dropdown within a single issue" class="figure mx-auto d-block"></figure><div id="stick-the-label" class="callout discussion">
+<figure><img src="fig/label-dropdown-in-issue.png" alt="Cog-wheel option selected to reveal the label dropdown within a single issue" class="figure mx-auto d-block"></figure><div id="triage-time" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="stick-the-label" class="callout-inner">
-<h3 class="callout-title">Stick the Label</h3>
+<div id="triage-time" class="callout-inner">
+<h3 class="callout-title">Triage Time</h3>
 <div class="callout-content">
-<p>Navigate to your practice repository’s issue page.</p>
+<p>A new idea came in for StarSort: supporting a new image format. In
+<strong>your practice repository’s</strong> issue page:</p>
 <ul>
-<li>Create a new issue entitled “[YOUR NAME]’s label issue”</li>
-<li>Add the <code>discussion</code> label</li>
+<li>Create a new issue entitled “[YOUR NAME]: support FITS image
+format”</li>
+<li>Add the <code>discussion</code> label so the team knows it needs
+further discussion</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="genai-triage-assistant" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-triage-assistant" class="callout-inner">
+<h3 class="callout-title">GenAI: Triage assistant</h3>
+<div class="callout-content">
+<p>Faced with a backlog of 50 unlabeled issues? An LLM can read an
+issue’s text and <em>suggest</em> a label (bug, enhancement, question…)
+or even a priority. It’s a great way to get a first pass — but a human
+should confirm before the labels drive real decisions, since a
+mislabeled issue hides in the wrong filter.</p>
 </div>
 </div>
 </div>
@@ -829,24 +988,37 @@ says “Filter by label” rather than “Apply labels.”</p>
 issues that have that label applied.</p>
 <p>You can select multiple labels or use the hints at the bottom of the
 “Labels” dropdown to do more advanced filtering, such as exclusion.</p>
-<div id="practice-filtering" class="callout discussion">
+<div id="filter-like-a-pro" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
-<div id="practice-filtering" class="callout-inner">
-<h3 class="callout-title">Practice Filtering</h3>
+<span class="callout-header">Challenge</span>
+<div id="filter-like-a-pro" class="callout-inner">
+<h3 class="callout-title">Filter Like a Pro</h3>
 <div class="callout-content">
-<p>Navigate to <a href="https://github.com/spack/spack" class="external-link">https://github.com/spack/spack</a>
+<p>Let’s go back to some real research software. Navigate to <a href="https://github.com/spack/spack" class="external-link">https://github.com/spack/spack</a>
 and find the issues page.</p>
 <ul>
-<li>Filter by the <code>architecture</code> label</li>
-<li>Filter by both the <code>architecture</code> and
-<code>architectures</code> labels</li>
-<li>(CHALLENGE) Filter by <code>question</code> but exclude
-<code>bug</code>
-</li>
+<li>Filter by the <code>environments</code> label?</li>
+<li>Filter by both the <code>environments</code> and <code>bug</code>
+labels?</li>
+<li>(CHALLENGE) Filter by <code>question</code> but <em>exclude</em>
+<code>bug</code>?</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>The last one uses the exclusion syntax in the search bar:
+<code>is:issue is:open label:question -label:bug</code>. The
+<code>-label:</code> prefix is the trick most people don’t know.</p>
+</div>
 </div>
 </div>
 </div>
@@ -861,6 +1033,9 @@ in GitHub Issues.</p>
 <div class="callout-content">
 <ul>
 <li>Labelling issues can help with organization and filtering.</li>
+<li>Curate the default label set to fit your project and team size.</li>
+<li>Filtering (including exclusion, e.g. <code>-label:bug</code>) makes
+a big backlog manageable.</li>
 </ul>
 </div>
 </div>
@@ -871,7 +1046,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-templates"><p>Content from <a href="templates.html">Issue Templates</a></p>
 <hr>
-<p>Last updated on 2025-07-15 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Issue-Tracking/edit/main/episodes/templates.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -913,6 +1088,12 @@ specific sections, data, instructions, etc.</p>
 <p>They are customizable for every project. You can add as many
 templates as makes sense for your project, or you can have none at
 all.</p>
+<p>Remember the good-issue table from earlier? A template is how you
+incorporate those items right into the “New issue” experience, so
+<em>every</em> contributor’s bug report comes with steps-to- reproduce
+and expected-vs-actual sections already laid out. It’s the StarSort
+maintainers’ favorite trick for getting reports they can actually act
+on.</p>
 <p>In this episode, we will learn the basics of issue templates.</p>
 </section><section><h2 class="section-heading" id="default-issue-templates">Default Issue Templates<a class="anchor" aria-label="anchor" href="#default-issue-templates"></a>
 </h2>
@@ -954,9 +1135,11 @@ with whatever you’d like.</p>
 </section><section><h2 class="section-heading" id="custom-issue-templates">Custom Issue Templates<a class="anchor" aria-label="anchor" href="#custom-issue-templates"></a>
 </h2>
 <hr class="half-width">
-<p>We now have templates for both bug reports and feature requests. For
-this project, however, we also want to create a template for Design
-Discussions. Let’s make this custom template.</p>
+<p>We now have templates for both bug reports and feature requests. The
+StarSort maintainers have a request, though: they want a template for
+<strong>Design Discussions</strong>, so proposals like your “support
+FITS format” idea from earlier come in with a consistent shape. Let’s
+build that custom template.</p>
 <p>When we created our first template, GitHub did the setup for us. If
 you navigate back to your main page, you will see a new directory has
 been created.</p>
@@ -1057,6 +1240,23 @@ sections:</p>
 </div>
 </div>
 </div>
+<div id="genai-draft-a-template-in-seconds" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-draft-a-template-in-seconds" class="callout-inner">
+<h3 class="callout-title">GenAI: Draft a template in seconds</h3>
+<div class="callout-content">
+<p>Templates are structured, repetitive text — exactly what LLMs do
+well. Try asking one: <em>“Write a GitHub issue template (with YAML
+front matter) for reporting a performance problem in a scientific Python
+tool.”</em> Then <strong>review and trim</strong> it to fit your project
+— AI tends to over-produce sections you don’t need, and “less is more”
+still applies.</p>
+</div>
+</div>
+</div>
 <p>We now have three issue templates available for use.</p>
 <figure><img src="fig/three-issue-template-list.png" alt="New issue page with three templates available - Bug report, Design discussion, and Feature request" class="figure mx-auto d-block"></figure>
 </div>
@@ -1080,28 +1280,33 @@ a user is allowed to open a blank issue if one of the provided templates
 doesn’t quite fit their need.</p>
 <p>The second option, <code>contact_links</code>, allows you to list
 links to external sites that will show up in the template chooser.</p>
-<div id="ask-google" class="callout discussion">
+<div id="ask-a-friend" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="ask-google" class="callout-inner">
-<h3 class="callout-title">Ask Google</h3>
+<div id="ask-a-friend" class="callout-inner">
+<h3 class="callout-title">Ask a Friend</h3>
 <div class="callout-content">
-<p>Create a <code>config.yml</code> for your repository. In the
-<code>config.yml</code>:</p>
+<p>Not every question belongs in the issue tracker — usage questions are
+often better in a discussion forum or chat. StarSort has a community
+discussions page, so let’s send people there instead of letting “how do
+I…?” issues pile up. Create a <code>config.yml</code> for your
+repository. In it:</p>
 <ul>
 <li>Enable blank issues</li>
-<li>Create a link with the name, “Ask Google,” a link to www.google.com,
-and the description, “Google may know your answer.”</li>
+<li>Add a contact link named “StarSort Community Q&amp;A” pointing to a
+discussions/forum URL of your choice (e.g., your repo’s GitHub
+Discussions page), with a description like “Ask usage questions
+here.”</li>
 </ul>
 <p>Then commit the changes directly to your main branch.</p>
 </div>
 </div>
 </div>
-<p>Our template chooser now has our three templates and a link to
-Google.</p>
-<figure><img src="fig/ask-google-template.png" alt='New issue page with three templates available - Bug report, Design discussion, and Feature request - plus an additional button with custom external link to "Ask Google"' class="figure mx-auto d-block"></figure><p>And that’s all, folks! You now know much more about GitHub
+<p>Our template chooser now shows our three templates plus the external
+community link.</p>
+<figure><img src="fig/ask-google-template.png" alt="New issue page with three templates available - Bug report, Design discussion, and Feature request - plus an additional button with a custom external contact link" class="figure mx-auto d-block"></figure><p>And that’s all, folks! You now know much more about GitHub
 Issues.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -1113,8 +1318,12 @@ Issues.</p>
 <ul>
 <li>Templates can be incorporated into any GitHub repository and can
 make issue creation more structured.</li>
+<li>A good template incorporates the “good issue” table into every new
+report.</li>
 <li>External links can be listed with the templates to help direct users
 to external resources.</li>
+<li>GenAI can draft a template quickly — review and trim it to fit your
+project.</li>
 </ul>
 </div>
 </div>
@@ -1173,8 +1382,8 @@ any links that you are not going to use.
   "url": "https://INTERSECT-training.github.io/Issue-Tracking/aio.html",
   "identifier": "https://INTERSECT-training.github.io/Issue-Tracking/aio.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2026-06-16",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>
