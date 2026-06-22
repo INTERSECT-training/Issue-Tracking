@@ -99,7 +99,7 @@ appropriate permissions!
 
 There are many interactions available on an open issue.
 
-![](fig/solution-open-issue-exercise.png){alt='A basic open issue based on the exercise above - Title "Miranda's First Issue", status "Open", basic content in the "Write" section'}
+![](fig/solution-open-issue-exercise.png){alt='A basic open issue based on the exercise above - Title "Mirandas First Issue", status "Open", basic content in the "Write" section'}
 
 The most basic interaction with an open issue is leaving a comment. This is
 how you can interact with the issue author, the assignee, and others who
