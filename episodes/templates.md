@@ -1,7 +1,7 @@
 ---
 title: "Issue Templates"
-teaching: 10
-exercises: 10
+teaching: 8
+exercises: 8
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
@@ -26,6 +26,11 @@ sections, data, instructions, etc.
 
 They are customizable for every project. You can add as many templates as
 makes sense for your project, or you can have none at all.
+
+Remember the good-issue table from earlier? A template is how you incorporate those items right
+into the "New issue" experience, so *every* contributor's bug report comes with steps-to-
+reproduce and expected-vs-actual sections already laid out. It's the StarSort maintainers'
+favorite trick for getting reports they can actually act on.
 
 In this episode, we will learn the basics of issue templates.
 
@@ -81,9 +86,10 @@ whatever you'd like.
 
 ## Custom Issue Templates
 
-We now have templates for both bug reports and feature requests. For this
-project, however, we also want to create a template for Design Discussions.
-Let's make this custom template.
+We now have templates for both bug reports and feature requests. The StarSort maintainers have
+a request, though: they want a template for **Design Discussions**, so proposals like your
+"support FITS format" idea from earlier come in with a consistent shape. Let's build that
+custom template.
 
 When we created our first template, GitHub did the setup for us. If you
 navigate back to your main page, you will see a new
@@ -147,6 +153,17 @@ Then commit the changes directly to your main branch.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## GenAI: Draft a template in seconds
+
+Templates are structured, repetitive text — exactly what LLMs do well. Try asking one:
+*"Write a GitHub issue template (with YAML front matter) for reporting a performance problem in
+a scientific Python tool."* Then **review and trim** it to fit your project — AI
+tends to over-produce sections you don't need, and "less is more" still applies.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 We now have three issue templates available for use.
 
 ![](fig/three-issue-template-list.png){alt='New issue page with three templates available - Bug report, Design discussion, and Feature request'}
@@ -179,27 +196,34 @@ that will show up in the template chooser.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Ask Google
+## Ask a Friend
 
-Create a `config.yml` for your repository. In the `config.yml`:
+Not every question belongs in the issue tracker — usage questions are often better in a
+discussion forum or chat. StarSort has a community discussions page, so let's send people there
+instead of letting "how do I...?" issues pile up. Create a `config.yml` for your repository. In
+it:
 
 * Enable blank issues
-* Create a link with the name, "Ask Google," a link to www.google.com, and the description, "Google may know your answer."
+* Add a contact link named "StarSort Community Q&A" pointing to a discussions/forum URL of your
+  choice (e.g., your repo's GitHub Discussions page), with a description like "Ask usage
+  questions here."
 
 Then commit the changes directly to your main branch.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Our template chooser now has our three templates and a link to Google.
+Our template chooser now shows our three templates plus the external community link.
 
-![](fig/ask-google-template.png){alt='New issue page with three templates available - Bug report, Design discussion, and Feature request - plus an additional button with custom external link to "Ask Google"'}
+![](fig/ask-google-template.png){alt='New issue page with three templates available - Bug report, Design discussion, and Feature request - plus an additional button with a custom external contact link'}
 
 And that's all, folks! You now know much more about GitHub Issues.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Templates can be incorporated into any GitHub repository and can make issue creation more structured.
+- A good template incorporates the "good issue" table into every new report.
 - External links can be listed with the templates to help direct users to external resources.
+- GenAI can draft a template quickly — review and trim it to fit your project.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
