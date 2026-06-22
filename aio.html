@@ -495,7 +495,7 @@ and find the issues page.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Open vs. closed counts are the toggles at the top of the issues list;
 the label count is on the <strong>Labels</strong> button (or the
@@ -701,10 +701,7 @@ appropriate permissions!</p>
 </h2>
 <hr class="half-width">
 <p>There are many interactions available on an open issue.</p>
-<p><img src="fig/solution-open-issue-exercise.png" class="figure">{alt=‘A basic open
-issue based on the exercise above - Title “Miranda’s First Issue”,
-status “Open”, basic content in the “Write” section’}</p>
-<p>The most basic interaction with an open issue is leaving a comment.
+<figure><img src="fig/solution-open-issue-exercise.png" alt='A basic open issue based on the exercise above - Title "Mirandas First Issue", status "Open", basic content in the "Write" section' class="figure mx-auto d-block"></figure><p>The most basic interaction with an open issue is leaving a comment.
 This is how you can interact with the issue author, the assignee, and
 others who have commented on or subscribed to the issue.</p>
 <p>Simply click in the comment box at the bottom of the issue, type
@@ -1013,7 +1010,7 @@ labels?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The last one uses the exclusion syntax in the search bar:
 <code>is:issue is:open label:question -label:bug</code>. The
