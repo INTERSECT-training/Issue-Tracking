@@ -38,9 +38,9 @@ Two optional bits of friendly competition. They're fun but skippable — don't l
 core exercises:
 
 - **Scavenger hunts** (Intro + Labels): first to call out the correct spack numbers / fastest
-  to build the filter wins. Great energy resets.
+  to build the filter wins (brownie points)
 - **Best Bug Report** (Basic Issues): spotlight 2–3 of the clearest reports and ask the room
-  *why* they're easy to act on — reinforces the checklist.
+  *why* they're easy to act on
 
 ## GenAI thread
 
