@@ -1,17 +1,19 @@
 ---
 title: "Labelling Issues"
-teaching: 5
+teaching: 6
+exercises: 8
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Learn how to use labels for GitHub issues.
+- Learn how to make, modify, apply, and filter by labels for GitHub issues.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
 - How do you make and assign labels to issues?
+- How do labels help you triage and prioritize work?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -46,27 +48,21 @@ Engineering, however, so we will need to modify these.
 
 ## Modifying Labels
 
-Labels can be added, edited, or deleted from the labels page.
-
-![](fig/label-highlights.png){alt='On the Labels page, individual label actions (Edit, Delete) circled'}
-
-Each label has three attributes:
-
-* Label name
-* Description
-* Color (Hex code)
+Labels can be added, edited, or deleted from the **Labels** page. Each label has three
+attributes: a **name**, a **description**, and a **color** (hex code).
 
 ![](fig/label-attributes.png){alt='Label attributes - label name, description, color - and the buttons "Cancel" and "Save changes"'}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Label Maker
+## Tidy Up StarSort's Labels
 
-Navigate to your practice repository's label page.
- 
+The StarSort maintainers want the label set to fit their small research team. In **your
+practice repository's** Labels page:
+
 * Add a new label for `discussion`
 * Remove the label for `good first issue`
-* Modify the color on the `wontfix` label to your favorite color
+* Change the color of the `wontfix` label to your favorite color
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -94,14 +90,26 @@ your preferred label(s).
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Stick the Label
+## Triage Time
 
-Navigate to your practice repository's issue page.
- 
-* Create a new issue entitled "[YOUR NAME]'s label issue"
-* Add the `discussion` label
+A new idea came in for StarSort: supporting a new image format. In **your practice
+repository's** issue page:
+
+* Create a new issue entitled "[YOUR NAME]: support FITS image format"
+* Add the `discussion` label so the team knows it needs further discussion
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## GenAI: Triage assistant
+
+Faced with a backlog of 50 unlabeled issues? An LLM can read an issue's text and *suggest* a
+label (bug, enhancement, question...) or even a priority. It's a great way to get a first pass —
+but a human should confirm before the labels drive real decisions, since a mislabeled issue
+hides in the wrong filter.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Filter by Labels
 
@@ -123,14 +131,21 @@ You can select multiple labels or use the hints at the bottom of the
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Practice Filtering
+## Filter Like a Pro
 
-Navigate to [https://github.com/spack/spack](https://github.com/spack/spack) and
-find the issues page.
- 
-* Filter by the `architecture` label
-* Filter by both the `architecture` and `architectures` labels
-* (CHALLENGE) Filter by `question` but exclude `bug`
+Let's go back to some real research software. Navigate to
+[https://github.com/spack/spack](https://github.com/spack/spack) and find the issues page.
+
+* Filter by the `environments` label?
+* Filter by both the `environments` and `bug` labels?
+* (CHALLENGE) Filter by `question` but *exclude* `bug`?
+
+:::::::::::::::::::::: solution
+
+The last one uses the exclusion syntax in the search bar: `is:issue is:open label:question
+-label:bug`. The `-label:` prefix is the trick most people don't know.
+
+::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -140,6 +155,8 @@ GitHub Issues.
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Labelling issues can help with organization and filtering.
+- Curate the default label set to fit your project and team size.
+- Filtering (including exclusion, e.g. `-label:bug`) makes a big backlog manageable.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

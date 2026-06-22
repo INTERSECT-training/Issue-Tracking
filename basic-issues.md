@@ -5,53 +5,79 @@ exercises: 10
 ---
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Become familiar with basic actions on GitHub Issues
+- Recognize what makes an issue clear and actionable.
+- Become familiar with basic actions on GitHub Issues.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
+- What makes a *good* issue?
 - How do you make an issue?
 - How do you interact with an open issue?
 - How do you close an issue?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## What Makes a *Good* Issue?
+
+Anyone can click "New issue" and type "it's broken." The skill worth learning is writing an
+issue a teammate can actually *act on* without a follow-up conversation. A good bug report
+usually has:
+
+| Ingredient | Why it matters |
+|------------|----------------|
+| **Clear, specific title** | "Crash when sorting empty folder" beats "bug" — it's findable and scannable. |
+| **Steps to reproduce** | If we can't trigger it, we can't fix it. Number the steps. |
+| **Expected vs. actual** | What *should* have happened, and what *did*. |
+| **Environment** | OS, version, language version — the details that change behavior. |
+| **One issue = one problem** | Don't bundle five bugs in one ticket; they can't be tracked or closed independently. |
+
+A good *feature request* is similar: what you want, **why** (the motivation/use case), and any
+alternatives you considered. Keep these in mind for every issue you open today.
+
 ## Open an Issue
 
-To open a new issue, navigate to the issue page. Here you will see a green
-"New issue" button in the top-right. Click this to start the creation of a new issue.
+Click the green **New issue** button (top-right of the Issues page) to start a new issue.
 
 ![](fig/new-issue.png){alt='New issue button circled in red. Button is on the top-right on the Issues page.'}
 
-This will load a new page with an empty issue.
+A new issue has a few parts:
 
-![](fig/empty-issue.png){alt='Empty issue page after clicking new issue button. All details (Title, Write, Assignees, etc.) are empty.'}
+- _Title_: displays on the main Issues page.
+- _Write_: the details of the issue — GitHub supports **Markdown** formatting.
+- _Preview_: shows the Markdown-rendered version before you submit.
 
-A new issue has several parts:
-
-- _Title_: This will display on the main "Issue" page.
-- _Write_: This is an open area for the details of the issue. GitHub support Markdown formatting.
-- _Preview_: This will preview the Markdown-rendered version of the details.
-
-Once an issue is filled out, the "Submit new issue" button will highlight.
+Once it's filled out, the **Submit new issue** button activates.
 
 ![](fig/submit-new-issue.png){alt='Submit new issue button is now highlighted and available to press'}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Open a New Issue
+## File Your First StarSort Bug
 
-Navigate to your practice repository's issue page.
- 
-* Open a new issue titled "[YOUR NAME]'s First Issue"
-* In the "Write" section, make a heading entitled "Description"
-* Write a short sentence telling us what you ate for breakfast this morning
-* Add a code block with "Hello, World" coded in your favorite language
-* Preview your issue to make sure it looks right
-* Submit the issue!
+You're testing StarSort and it crashes when you point it at an empty image folder. Time to file
+a proper bug report! In **your practice repository's** issue page:
+
+* Open a new issue with a clear, specific **title**
+* In the "Write" section, add a `## Steps to Reproduce` heading and number the steps.
+* Add a section for **Expected vs. Actual** behavior.
+* Include a code block showing the (made-up) error message StarSort printed.
+* **Preview** to check your Markdown, then **submit**!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## GenAI: from messy notes to a clean report
+
+Bug reports often start as a jumble: "it broke when the folder was empty, error said
+IndexError, was on my mac." Try pasting notes like that into an LLM and asking it to format a
+bug report with steps to reproduce and expected/actual sections. Then **check it against the
+good issue table** — did it invent steps or details you didn't give it? You supply the facts; the AI
+just tidies the structure.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 On the right-hand side, there are more options that can be modified.
 
@@ -99,20 +125,21 @@ tag other users, link to other issues or pull requests, and more.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Tag Your Instructor
+## Loop in a Maintainer
 
-Navigate to your issue from the previous exercise.
- 
+A StarSort maintainer should know about your bug. Navigate to your issue from the previous
+exercise.
+
 * Write a new comment on the issue, mentioning your instructor using
   the `@` symbol.
-* Add the comment to the issue
+* Add the comment to the issue.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Close an Issue
 
-We are done with this issue. We have completed the work on it, had our
-discussion, and now we don't want it cluttering up our issue list.
+Good news — a maintainer "fixed" your StarSort bug! The work is done and the discussion is
+over, so we don't want it cluttering up the open-issues list anymore.
 
 Closing an issue is simple - just click the "Close issue" button.
 
@@ -141,9 +168,11 @@ You now know the basic actions you can take on a GitHub issue!
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
+- A good issue has a clear title, steps to reproduce, expected vs. actual behavior, and covers one problem.
 - New issues can be opened in a repository using the 'New issue' button.
 - Text on issues use Markdown styling for formatting.
 - A user can interact with issues in multiple ways: commenting, mentioning others, linking to other issues and pull requests, and more.
+- GenAI can format messy notes into a structured report, but you must supply and verify the facts.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
