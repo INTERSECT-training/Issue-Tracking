@@ -151,6 +151,34 @@ Finish the "Design Discussion" template by adding the following sections:
 
 Then commit the changes directly to your main branch.
 
+:::::::::::::::::::::: solution
+
+The finished `design_discussion.md` combines the header from above with two Markdown sections.
+Wording will vary, but it should look something like:
+
+```markdown
+---
+name: Design Discussion
+about: Start a design discussion for the project
+title: ''
+labels: ''
+assignees: ''
+
+---
+
+## Description
+
+<!-- A clear description of the design question or proposal. -->
+
+## Motivation
+
+<!-- Why does this matter? What problem or use case does it address? -->
+```
+
+After committing to `main`, the template appears as an option on the "New issue" page.
+
+::::::::::::::::::::::
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::  callout
@@ -209,6 +237,25 @@ it:
   questions here."
 
 Then commit the changes directly to your main branch.
+
+:::::::::::::::::::::: solution
+
+Create `.github/ISSUE_TEMPLATE/config.yml` with the two options filled in (your URL will
+differ):
+
+```yaml
+blank_issues_enabled: true
+contact_links:
+  - name: StarSort Community Q&A
+    url: https://github.com/YOUR-USERNAME/YOUR-REPO/discussions
+    about: Ask usage questions here.
+```
+
+Once committed to `main`, the "New issue" template chooser shows your existing templates plus a
+button for the "StarSort Community Q&A" link. (Note: `blank_issues_enabled: false` would *hide*
+the blank-issue option and push people toward your templates and links instead.)
+
+::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
