@@ -312,7 +312,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Issue Templates</h1>
-        <p>Last updated on 2026-06-22 |
+        <p>Last updated on 2026-07-13 |
 
         <a href="https://github.com/INTERSECT-training/Issue-Tracking/edit/main/episodes/templates.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -464,11 +464,11 @@ template</td>
 <h3 id="issue-template-content">Issue Template Content<a class="anchor" aria-label="anchor" href="#issue-template-content"></a></h3>
 <p>Following this header, we can add whatever other data or sections we
 desire, formatting the template using Markdown.</p>
-<div id="discussion-section" class="callout discussion">
+<div id="discussion-section" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
+<span class="callout-header">Challenge</span>
 <div id="discussion-section" class="callout-inner">
 <h3 class="callout-title">Discussion Section</h3>
 <div class="callout-content">
@@ -477,6 +477,42 @@ sections:</p>
 <ul><li>Description</li>
 <li>Motivation</li>
 </ul><p>Then commit the changes directly to your main branch.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>The finished <code>design_discussion.md</code> combines the header
+from above with two Markdown sections. Wording will vary, but it should
+look something like:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="an">name:</span><span class="co"> Design Discussion</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a><span class="an">about:</span><span class="co"> Start a design discussion for the project</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1" aria-label="code-block-2-4"></a><span class="an">title:</span><span class="co"> ''</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1" aria-label="code-block-2-5"></a><span class="an">labels:</span><span class="co"> ''</span></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1" aria-label="code-block-2-6"></a><span class="an">assignees:</span><span class="co"> ''</span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1" aria-label="code-block-2-7"></a></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1" aria-label="code-block-2-8"></a><span class="co">---</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1" aria-label="code-block-2-9"></a></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1" aria-label="code-block-2-10"></a><span class="fu">## Description</span></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1" aria-label="code-block-2-11"></a></span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1" aria-label="code-block-2-12"></a><span class="co">&lt;!-- A clear description of the design question or proposal. --&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1" aria-label="code-block-2-13"></a></span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1" aria-label="code-block-2-14"></a><span class="fu">## Motivation</span></span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1" aria-label="code-block-2-15"></a></span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1" aria-label="code-block-2-16"></a><span class="co">&lt;!-- Why does this matter? What problem or use case does it address? --&gt;</span></span></code></pre>
+</div>
+<p>After committing to <code>main</code>, the template appears as an
+option on the “New issue” page.</p>
+</div>
 </div>
 </div>
 </div>
@@ -517,11 +553,11 @@ a user is allowed to open a blank issue if one of the provided templates
 doesn’t quite fit their need.</p>
 <p>The second option, <code>contact_links</code>, allows you to list
 links to external sites that will show up in the template chooser.</p>
-<div id="ask-a-friend" class="callout discussion">
+<div id="ask-a-friend" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
+<span class="callout-header">Challenge</span>
 <div id="ask-a-friend" class="callout-inner">
 <h3 class="callout-title">Ask a Friend</h3>
 <div class="callout-content">
@@ -536,6 +572,33 @@ discussions/forum URL of your choice (e.g., your repo’s GitHub
 Discussions page), with a description like “Ask usage questions
 here.”</li>
 </ul><p>Then commit the changes directly to your main branch.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>Create <code>.github/ISSUE_TEMPLATE/config.yml</code> with the two
+options filled in (your URL will differ):</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="fu">blank_issues_enabled</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="fu">contact_links</span><span class="kw">:</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1" aria-label="code-block-4-3"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> StarSort Community Q&amp;A</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1" aria-label="code-block-4-4"></a><span class="at">    </span><span class="fu">url</span><span class="kw">:</span><span class="at"> https://github.com/YOUR-USERNAME/YOUR-REPO/discussions</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1" aria-label="code-block-4-5"></a><span class="at">    </span><span class="fu">about</span><span class="kw">:</span><span class="at"> Ask usage questions here.</span></span></code></pre>
+</div>
+<p>Once committed to <code>main</code>, the “New issue” template chooser
+shows your existing templates plus a button for the “StarSort Community
+Q&amp;A” link. (Note: <code>blank_issues_enabled: false</code> would
+<em>hide</em> the blank-issue option and push people toward your
+templates and links instead.)</p>
+</div>
 </div>
 </div>
 </div>
@@ -625,8 +688,8 @@ any links that you are not going to use.
   "url": "https://INTERSECT-training.github.io/Issue-Tracking/instructor/templates.html",
   "identifier": "https://INTERSECT-training.github.io/Issue-Tracking/instructor/templates.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2026-06-22",
-  "datePublished": "2026-07-07"
+  "dateModified": "2026-07-13",
+  "datePublished": "2026-07-13"
 }
 
   </script><script>
