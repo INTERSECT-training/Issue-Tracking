@@ -138,12 +138,12 @@ Let's go back to some real research software. Navigate to
 
 * Filter by the `environments` label?
 * Filter by both the `environments` and `bug` labels?
-* (CHALLENGE) Filter by `configuration` but *exclude* `bug`?
+* (CHALLENGE) Filter by `macOS` but *exclude* `bug`?
 
 :::::::::::::::::::::: solution
 
 The last one uses the exclusion syntax in the search bar: `is:issue is:open
-label:configuration -label:bug`.
+label:macOS -label:bug`.
 
 ::::::::::::::::::::::
 
